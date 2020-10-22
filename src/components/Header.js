@@ -27,9 +27,9 @@ const Header = () => {
             <div className="bounds">
               
              <h1 className="header--logo"> 🗿 Moai </h1>
-                {/* <div className="Search">
+                <div className="Search">
                 <input className="Search" type="text" placeholder="Search..." aria-label="Search" to="/search"></input>  
-                </div> */}
+                </div>
                 <nav>
                 <Link className="signup" to="/signup">Sign Up</Link>
                 <Link className="signin" to="/signin">Sign In</Link>

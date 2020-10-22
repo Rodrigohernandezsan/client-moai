@@ -137,6 +137,7 @@ body {
   padding: 0 15px;
   margin: 0;
   display: inline-block;
+  
 }
 /* line 23, ../sass/global.sass */
 .header--logo a {
@@ -160,7 +161,7 @@ body {
 /* line 34, ../sass/global.sass */
 .header nav {
   float: right;
-  margin-top: 3px;
+  margin-top: 23px;
 }
 /* line 37, ../sass/global.sass */
 .header nav a {
@@ -511,14 +512,14 @@ p {
 }
 
 
-/* .Search {
+.Search {
     font-size: 17px; 
     display: inline-block;
     font-family: Roboto Mono,monospace;
     position: relative;
-    padding: 10 15px;
-    margin: 0;
- } */
+    
+    
+ }
 
 /* line 468, ../sass/global.sass */
 textarea {

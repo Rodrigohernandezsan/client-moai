@@ -14,7 +14,7 @@ import { NotFound } from './components/NotFound';
 import { Consumer } from './components/contex';
 import { Forbidden } from './components/Forbidden';
 import { UnhandledError } from './components/Error';
-// import Search from "./components/Search";
+import Search from "./components/Search";
 
 
 
@@ -41,7 +41,7 @@ class App extends Component {
               <Route exact path='/forbidden' component={Forbidden} />
               <Route exact path='/notfound' component={NotFound} />
               <Route component={NotFound} />
-              {/* <Route exact path="/search" render={() => <Search resources={this.state.time} />} />  */}
+              <Route exact path="/search" render={() => <Search resources={this.state.time} />} />  
 
 
             </Switch>
