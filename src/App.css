@@ -137,7 +137,6 @@ body {
   padding: 0 15px;
   margin: 0;
   display: inline-block;
-  
 }
 /* line 23, ../sass/global.sass */
 .header--logo a {
@@ -516,7 +515,7 @@ p {
     font-size: 17px; 
     display: inline-block;
     font-family: Roboto Mono,monospace;
-    position: relative;
+    
     
     
  }
