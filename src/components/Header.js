@@ -27,13 +27,15 @@ const Header = () => {
             <div className="bounds">
               
              <h1 className="header--logo"> CURATED BY 🗿 Moai </h1>
+
                 <nav>
-                {/* <Link className="Search" to="/search">Search</Link>  */}
                 <Link className="signup" to="/signup">Sign Up</Link>
                 <Link className="signin" to="/signin">Sign In</Link>
                 </nav>
-                
+                <input className="Search" type="text" placeholder="Search" aria-label="Search" to="/search"></input>  
+
               </div>
+              
             </div>
             
         )

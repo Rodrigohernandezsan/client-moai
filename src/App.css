@@ -9,7 +9,7 @@ xmp {
 /* line 102, ../sass/reset.sass */
 html,
 body {
-  height: 100%;
+  height: 110%;
   padding: 0;
   margin: 0 auto;
   background-size: cover;
@@ -509,6 +509,13 @@ p {
   margin-top: 60px;
   font-size: 26PX;
 }
+
+
+.Search {
+    margin-top: 60px;
+    font-size: 26PX; 
+
+ }
 
 /* line 468, ../sass/global.sass */
 textarea {
