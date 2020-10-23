@@ -41,7 +41,7 @@ class App extends Component {
               <Route exact path='/forbidden' component={Forbidden} />
               <Route exact path='/notfound' component={NotFound} />
               <Route component={NotFound} />
-              <Route exact path="/search" render={() => <Search resources={this.state.time} />} />  
+              <Route exact path="/search" render={() => <Search courses={this.state.allCourses} />} />  
 
 
             </Switch>
