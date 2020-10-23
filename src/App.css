@@ -118,8 +118,8 @@ svg {
 
 /* line 5, ../sass/global.sass */
 body {
-  font-family: Roboto Mono,monospace;
-  background: rgb(255, 242, 198);
+  /* font-family: Roboto Mono,monospace;
+  background: rgb(255, 242, 198); */
   
   
 }
@@ -747,12 +747,12 @@ a:hover {
 
 /* below is just for demo styling */
 
-footer > div {
+/* footer > div {
   display: flex;
   
   line-height: 6.7;
   font-family: Roboto Mono,monospace;
-}
+} */
 
  /* @keyframes wave-animation {
   0%,

@@ -18,9 +18,9 @@ export default class Search extends Component {
     );
   };
 
-  searchResources = () => {
+  searchCourse = () => {
     this.setState({
-      results: this.props.Resources.filter((course) =>
+      results: this.props.Course.filter((course) =>
       course.name
           .toLocaleLowerCase()
           .includes(this.state.searchParams.toLocaleLowerCase())
