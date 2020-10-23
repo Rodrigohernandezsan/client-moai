@@ -13,15 +13,15 @@ export default class Search extends Component {
         [event.target.name]: event.target.value,
       },
       () => {
-        this.searchResources();
+        this.searchCourse();
       }
     );
   };
 
   searchResources = () => {
     this.setState({
-      results: this.props.Resources.filter((resources) =>
-      resources.name
+      results: this.props.Resources.filter((course) =>
+      course.name
           .toLocaleLowerCase()
           .includes(this.state.searchParams.toLocaleLowerCase())
       ),
@@ -44,17 +44,17 @@ export default class Search extends Component {
           />
         </div>
         <div>
-          {results.map((resources) => (
-            <div className="card" key={resources.id}>
-              <img src={resources.image.medium} alt={resources.name} />
-              <div className="resources-details">
-                <h2>{resources.name}</h2>
-                <div className="resources">
-                  <strong>Resources:</strong> {resources.name}
+          {results.map((course) => (
+            <div className="card" key={course._id}>
+              <img src={course.image.medium} alt={course.name} />
+              <div className="course-details">
+                <h2>{course.name}</h2>
+                <div className="course">
+                  <strong>Resources:</strong> {course.name}
                  
                 </div>
 
-                <Link to={`/courses/${resources.id}`}>Details</Link>
+                <Link to={`/courses/${course._id}`}>Details</Link>
               </div>
             </div>
           ))}

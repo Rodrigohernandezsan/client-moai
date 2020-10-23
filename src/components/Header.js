@@ -31,14 +31,17 @@ const Header = () => {
               
              <h1 className="header--logo"> 🗿 Moai </h1>
                 <div className="Search">
-                <input className="Search" type="text" placeholder="Search..." aria-label="Search" to="/search"></input>  
+                <input className="Search" type="text" placeholder="Search..."  aria-label="Search" to="/search"></input>
+                
                 </div>
                 <nav>
                 <Link className="signup" to="/signup">Sign Up</Link>
                 <Link className="signin" to="/signin">Sign In</Link>
+               
                 </nav>
                 
                 
+
               </div>
               
             </div>
