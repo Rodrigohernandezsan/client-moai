@@ -40,8 +40,6 @@ export default class Courses extends Component {
       </div>)
 
 
-
-
     //renders the courses to the page
     return (
       (this.state.unhandledError)//redirects to error path if the api request responds with an error
