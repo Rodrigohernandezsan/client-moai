@@ -14,6 +14,9 @@ export default class Courses extends Component {
   }
 
   //sets course state with data from api
+
+
+  
   getCourseData = () => {
     axios.get('http://localhost:5000/api/courses')
       .then(res => {
@@ -30,7 +33,7 @@ export default class Courses extends Component {
 
 
   render() {
-    //creates each course element from the api data
+    
     const courseData = this.state.allCourses.map(course =>
       <div className="grid-33" key={course._id}>
         <Link className="course--module course--link" to={`/courses/${course._id}`}>
@@ -42,7 +45,7 @@ export default class Courses extends Component {
 
     //renders the courses to the page
     return (
-      (this.state.unhandledError)//redirects to error path if the api request responds with an error
+      (this.state.unhandledError)
         ? <Redirect to="/error" />
         :
         <div className="bounds">
