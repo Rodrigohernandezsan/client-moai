@@ -37,14 +37,13 @@ const Header = () => {
                 <div className="Search">
                 <input className="Search" type="text" placeholder="Search..."  aria-label="Search" to="/Search"></input>
                 </div>
-                <div className="Search">
+                
                 {/* <Search onSearch={this.state.allCourses}/> */}
-                </div>
+               
 
                 <nav>
                 <Link className="signup" to="/signup">Sign Up</Link>
                 <Link className="signin" to="/signin">Sign In</Link>
-               
                 </nav>
               </div>
               

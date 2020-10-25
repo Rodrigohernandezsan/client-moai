@@ -108,38 +108,34 @@ body {
   background: rgb(255, 242, 198);
 }
 
-/* line 13, ../sass/global.sass */
+
 .header {
   background: #4e8ace;
   padding: 40px 0;
   margin-bottom: 30px;
 }
-/* line 17, ../sass/global.sass */
-.header--logo {
+h1.header--logo {
   color: #fff;
   font-size: 44px;
   padding: 0 15px;
   margin: 0;
   display: inline-block;
 }
-/* line 23, ../sass/global.sass */
 .header--logo a {
   color: rgba(255, 255, 255, 0.5);
+
 }
-/* line 25, ../sass/global.sass */
 .header--logo a:hover {
   color: #fff;
+  
 }
-/* line 27, ../sass/global.sass */
 .header--logo .selected {
   color: #fff;
 }
-/* line 29, ../sass/global.sass */
 .header--logo .chevron {
   fill: rgb(255, 255, 255);
   width: 7px;
   height: auto;
-  margin: 0 10px;
 }
 /* line 34, ../sass/global.sass */
 .header nav {
@@ -486,7 +482,6 @@ p {
   margin: 0;
 }
 
-/* line 460, ../sass/global.sass */
 .signin,
 .signup {
   margin-top: 60px;
@@ -496,15 +491,12 @@ p {
 
 
 .Search {
-    font-size: 17px; 
-    display: inline-block;
-    font-family: Roboto Mono,monospace;
-    
-    
-    
+  padding-left: 16px;
+  font-size: 17px; 
+  display: inline-block;
+  font-family: Roboto Mono,monospace;  
  }
 
-/* line 468, ../sass/global.sass */
 textarea {
   width: 100%;
   min-height: 300px;
@@ -731,12 +723,12 @@ a:hover {
 
 /* below is just for demo styling */
 
-/* footer > div {
+footer > div {
   display: flex;
   
   line-height: 6.7;
   font-family: Roboto Mono,monospace;
-} */
+}
 
  /* @keyframes wave-animation {
   0%,
