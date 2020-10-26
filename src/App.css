@@ -1,4 +1,3 @@
-
 xmp {
   border: 0;
   margin: 0;
@@ -116,7 +115,7 @@ body {
 }
 h1.header--logo {
   color: #fff;
-  font-size: 44px;
+  font-size: 74px;
   padding: 0 15px;
   margin: 0;
   display: inline-block;
@@ -491,11 +490,13 @@ p {
 
 
 .Search {
-  padding-left: 16px;
   font-size: 17px; 
-  display: inline-block;
-  font-family: Roboto Mono,monospace;  
+  font-family: Roboto Mono,monospace;
+  width: 299px;
+  padding-left: 19px;  display: inline-block;
  }
+
+ 
 
 textarea {
   width: 100%;
@@ -742,4 +743,5 @@ footer > div {
     transform: rotate(-15deg);
   }
 }  */
+
 
