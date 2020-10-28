@@ -36,7 +36,7 @@ const Header = () => {
               </nav>
 
               <div className="Search">
-              <input type="Search" type="text" placeholder="Search.."  to="/"></input>  
+              <input type="Search" type="text" placeholder="Search.."  to="/search"></input>  
               </div>
 
 
