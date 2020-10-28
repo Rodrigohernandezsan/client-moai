@@ -119,6 +119,9 @@ h1.header--logo {
   padding: 0 15px;
   margin: 0;
   display: inline-block;
+  /* height:120px;
+  width:1500%; */
+    
 }
 .header--logo a {
   color: rgba(255, 255, 255, 0.5);
@@ -674,10 +677,8 @@ input:focus {
   position:fixed;
   
   bottom:0px;
-  height:100px;
+  height:80px;
   width:100%;
-  
-  
   
  
 }
@@ -689,14 +690,6 @@ input:focus {
   justify-items: center;
   margin: auto; 
 }
-
-@media (min-width: 500px) {
-  .footer ul {
-    grid-auto-flow: column;
-    
-  }
-}
-
 
 
 .footer a {
@@ -722,7 +715,6 @@ a:hover {
   animation: wave-animation 0.3s infinite;
 }
 
-/* below is just for demo styling */
 
 footer > div {
   display: flex;
@@ -731,17 +723,6 @@ footer > div {
   font-family: Roboto Mono,monospace;
 }
 
- /* @keyframes wave-animation {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(20deg);
-  }
-  75% {
-    transform: rotate(-15deg);
-  }
-}  */
+
 
 

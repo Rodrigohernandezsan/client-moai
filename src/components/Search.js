@@ -19,8 +19,9 @@ export default class Search extends Component {
   };
 
   searchCourse = () => {
+    // console.log("test")
     this.setState({
-      results: this.props.Course.filter((course) =>
+      results: this.props.courses.filter((course) =>
       course.name
           .toLocaleLowerCase()
           .includes(this.state.searchParams.toLocaleLowerCase())
@@ -44,6 +45,7 @@ export default class Search extends Component {
           />
         </div>
         <div>
+
           {results.map((course) => (
             <div className="card" key={course._id}>
               <img src={course.image.medium} alt={course.name} />

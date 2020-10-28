@@ -22,7 +22,7 @@ export default class CourseDetails extends Component {
     this.getCourseData();
   }
 
-  //gets course details from the api and sets state
+  
   getCourseData = () => {
     axios.get(`http://localhost:5000/api/courses/${this.props.match.params.id}`)
       .then(res => {
@@ -48,7 +48,6 @@ export default class CourseDetails extends Component {
       });
   }
 
-  //deletes course from database if the user has authorization
   deleteCourse = (auth) => {
     axios.delete(`http://localhost:5000/api/courses/${this.props.match.params.id}`, { headers: { 'Authorization': auth } })
       .then(() => this.setState({
@@ -79,7 +78,7 @@ export default class CourseDetails extends Component {
             <div className="course--stats">
               <ul className="course--stats--list">
 
-                { //does not display Estimated time if the value is null
+                { 
                   (this.state.time)
                     ? <li className="course--stats--list--item">
                       <h4>📅 MODULE</h4>
@@ -87,7 +86,7 @@ export default class CourseDetails extends Component {
                     </li>
                     : null
                 }
-                { //does not display Materials if the value is null
+                { 
                   (this.state.materials)
                     ? <li className="course--stats--list--item">
                       <h4>📌 FEATURES</h4>
@@ -104,12 +103,12 @@ export default class CourseDetails extends Component {
       </div>;
 
     return (
-      (this.state.unhandledError)//redirects to error path if the request to api returns an unhandled error
+      (this.state.unhandledError)
         ? <Redirect to="/error" />
         :
-        (this.state.notFound) //redirects to notfound path if the course route does not exist
+        (this.state.notFound) 
           ? <Redirect to='/notfound' />
-          : (this.state.deleted) //redirects to courses page if the course has been deleted
+          : (this.state.deleted) 
             ? <Redirect to='/' />
             : <React.Fragment>
               <div className="actions--bar">
@@ -117,7 +116,7 @@ export default class CourseDetails extends Component {
                   <div className="grid-100">
                     <Consumer>
                       {context => (
-                        //checks if user is signed in, and owns the course else does not display update or delete buttons
+                        
                         (context.authenticated && context.authenticatedUserId === this.state.user._id)
                           ? <span>
                             <Link className="button" to={`/courses/${this.state.course._id}/update`}>Update Resources</Link>

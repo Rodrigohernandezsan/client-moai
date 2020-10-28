@@ -21,11 +21,9 @@ export default class UpdateCourse extends Component {
     this.getCourseData();
   }
 
-  //gets course data from the api and sets state
   getCourseData = () => {
     axios.get(`http://localhost:5000/api/courses/${this.props.match.params.id}`)
       .then(res => {
-        //Checks if authenticated user id matches course user id and sets forbidden state to true if they do no match
         if (res.data.user._id === localStorage.getItem("id")) {
           this.setState({
             title: res.data.title,
@@ -52,7 +50,6 @@ export default class UpdateCourse extends Component {
       });
   }
 
-  //updates course details when the form is submitted
   updateCourse = (auth) => {
     const formData = {
       "title": this.state.title,
@@ -75,7 +72,6 @@ export default class UpdateCourse extends Component {
       });
   }
 
-  //sets state when any for field is changed
   handleChange = (e, state) => {
     this.setState({
       [state]: e.target.value
@@ -85,13 +81,13 @@ export default class UpdateCourse extends Component {
 
   render() {
     return (
-      (this.state.unhandledError)//redirects to error path if the request to api returns an unhandled error
+      (this.state.unhandledError)
         ? <Redirect to="/error" />
         :
-        (this.state.forbidden)// redirects to forbidden if user does not own the course
+        (this.state.forbidden)
           ? <Redirect to="/forbidden" />
           :
-          (this.state.notFound) //redirects to notfound path if the course route does not exist
+          (this.state.notFound) 
             ? <Redirect to="/notfound" />
             :
             <Consumer>
@@ -101,7 +97,7 @@ export default class UpdateCourse extends Component {
                   <div className="bounds course--detail">
                     <h1>Update Resources</h1>
                     {
-                      (!this.state.validationErrors) //renders validation errors if there are any
+                      (!this.state.validationErrors) 
                         ? null
                         : <div>
                           <h2 className="validation--errors--label">Validation errors</h2>

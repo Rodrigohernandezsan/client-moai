@@ -2,13 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Consumer } from './contex';
 
-
-
-
 const Header = () => {
 
 
-  
   return (
     <Consumer>
       {context => {
@@ -40,9 +36,14 @@ const Header = () => {
               </nav>
 
               <div className="Search">
-              <input type="Search" type="text" placeholder="Search.." to="/search"></input>  
+              <input type="Search" type="text" placeholder="Search.."  to="/"></input>  
               </div>
+
+
+              {/* <Link to="/search">Search Episodes</Link> */}
+              {/* <Link  type="Search" type="text" placeholder="Search.." to="/"> Search Episodes  </Link>  */}
               {/* <Search onSearch={this.state.allCourses}/> */}
+              
               </div>
 
             </div>

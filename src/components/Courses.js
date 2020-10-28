@@ -13,7 +13,6 @@ export default class Courses extends Component {
     this.getCourseData();
   }
 
-  //sets course state with data from api
 
 
   
@@ -43,7 +42,6 @@ export default class Courses extends Component {
       </div>)
 
 
-    //renders the courses to the page
     return (
       (this.state.unhandledError)
         ? <Redirect to="/error" />

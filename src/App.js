@@ -21,7 +21,6 @@ import Search from './components/Search';
 
 class App extends Component {
 
- 
 
 
   render() {
@@ -42,9 +41,8 @@ class App extends Component {
               <Route exact path='/forbidden' component={Forbidden} />
               <Route exact path='/notfound' component={NotFound} />
               <Route component={NotFound} />
-              <Route exact path="/search" render={() => <Search courses={this.state.allCourses} />} />  
+              <Route exact path="/search" render={() => <Search courses={this.state.courses} />} />  
             </Switch>
-            
           }
           </Consumer>
         </div>

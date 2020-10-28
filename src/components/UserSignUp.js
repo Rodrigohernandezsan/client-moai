@@ -21,11 +21,11 @@ export default class UserSignUp extends Component {
     }
   }
 
-  //creates a new user with the form data, accepts callback to sign in user after creation
+  
   createUser = (callback) => {
-    //confirms passwords entered by user match, displays error message if not
+    
     if (this.state.password !== this.state.confirmPassword) {
-      //if passwords do not match set passwordMatch to false
+      
       this.setState({
         validationErrors: null,
         passwordMatch: false
@@ -39,10 +39,10 @@ export default class UserSignUp extends Component {
       }
       axios.post('http://localhost:5000/api/users', formData)
         .then(() => {
-          //signs in user after they have been created in the database
+          
           callback(this.state.emailAddress, this.state.password, this.props.history);
         })
-        //sets validation error states if there are any
+        
         .catch(err => {
           if (err.response.status === 400) {
             this.setState({
@@ -59,14 +59,14 @@ export default class UserSignUp extends Component {
     }
   }
 
-  //function to set state if a form field is changed
+
   handleChange = (e, state) => {
     this.setState({
       [state]: e.target.value
     });
   }
 
-  //creates an input field 
+  
   generateFormInput = (inputName, type, placeholder) => {
     return (
       <div>
@@ -79,7 +79,7 @@ export default class UserSignUp extends Component {
 
   render() {
     return (
-      (localStorage.getItem('authenticated')) //redirects user to home page if they are already signed in
+      (localStorage.getItem('authenticated')) 
         ? <Redirect to="/" />
         :
         <Consumer>
@@ -88,7 +88,7 @@ export default class UserSignUp extends Component {
               <div className="grid-33 centered signin">
                 <h1>Sign Up</h1>
                 {
-                  (!this.state.validationErrors) //renders validation errors if there are any
+                  (!this.state.validationErrors) 
                     ? null
                     : <div>
                       <h2 className="validation--errors--label">Validation errors</h2>

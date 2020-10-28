@@ -13,14 +13,12 @@ export default class UserSignIn extends Component {
     };
   }
 
-  //function to update state when a form field is changed
   handleChange = (e, state) => {
     this.setState({
       [state]: e.target.value
     });
   }
 
-  //creates an input field 
   generateFormInput = (inputName, type, placeholder) => {
     return (
       <div>
@@ -47,7 +45,7 @@ export default class UserSignIn extends Component {
                 <div>
                   <form onSubmit={(e) => {
                     e.preventDefault();
-                    //Checks users credentials against datbase and signs them in if there is a match
+                    
                     context.actions.signIn(email, pass, history);
                   }
                   }>
