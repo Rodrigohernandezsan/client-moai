@@ -15,9 +15,9 @@ const Header = () => {
               <div className="bounds">
             
                 <h1 className="header--logo"> 🗿 Moai </h1>
-                <div className="Search">
+                {/* <div className="Search">
                 <input type="Search" type="text" placeholder="Search.." to="/search"></input>  
-                </div>
+                </div> */}
                 <nav>
                   <span>Welcome {context.firstName} {context.lastName}</span>
                   <Link className="signout" to="/signout">Sign Out</Link>
@@ -35,9 +35,9 @@ const Header = () => {
                 <Link className="signin" to="/signin">Sign In</Link>
               </nav>
 
-              <div className="Search">
+              {/* <div className="Search">
               <input type="Search" type="text" placeholder="Search.."  to="/search"></input>  
-              </div>
+              </div> */}
 
 
               {/* <Link to="/search">Search Episodes</Link> */}
