@@ -30,10 +30,14 @@ const Header = () => {
             <div className="bounds">
             <h1 className="header--logo"> 🗿🗻 Moai </h1>
 
+
+
              <nav>
                 <Link className="signup" to="/signup">Sign Up</Link>
                 <Link className="signin" to="/signin">Sign In</Link>
               </nav>
+
+              
 
               {/* <div className="Search">
               <input type="Search" type="text" placeholder="Search.."  to="/search"></input>  
