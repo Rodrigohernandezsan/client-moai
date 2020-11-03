@@ -28,7 +28,7 @@ export default class CreateCourse extends Component {
       'materialsNeeded': this.state.materials,
       'estimatedTime': this.state.time
     }
-    axios.post('REACT_APP_API_BASE_URL', formData, { headers: { 'Authorization': auth } })
+    axios.post('http://localhost:5000/api/courses', formData, { headers: { 'Authorization': auth } })
       .then(() => {
         this.setState({
           created: true
