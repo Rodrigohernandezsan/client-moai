@@ -99,12 +99,15 @@ sup {
 /* line 187, ../sass/reset.sass */
 svg {
   overflow: hidden;
+  
+
 }
 
 
 body {
   font-family: Roboto Mono,monospace;
   background: rgb(255, 242, 198);
+
 }
 
 
@@ -115,7 +118,7 @@ body {
 }
 h1.header--logo {
   color: #fff;
-  font-size: 74px;
+  font-size: 114px;
   padding: 0 15px;
   margin: 0;
   display: inline-block;
@@ -307,7 +310,7 @@ p {
   display: inline-block;
   font-size: 28px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -55%);
   -moz-transform: translate(-50%, -55%);
@@ -316,7 +319,7 @@ p {
 }
 /* line 149, ../sass/global.sass */
 .course--add--title .add {
-  width: 13px;
+  width: 10px;
   height: auto;
   margin: 0 5px 0 0;
   fill: rgb(27, 27, 27);
@@ -677,7 +680,7 @@ input:focus {
   position:fixed;
   
   bottom:0px;
-  height:80px;
+  height:120px;
   width:100%;
   
  
