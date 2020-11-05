@@ -6,16 +6,14 @@ const service = axios.create({
 });
 
 export const getCourseData = (id) => {
-  console.log ('all Course')
   return service
-    .get('/course')
+    .get('/courses')
     .then((response) => response.data)
     .catch((err) => err);
 };
 
 
 export const deleteCourse = (id) => {
-  console.log ('delete Course')
   return service
     .get(`/courses/delete'${id}`)
     .then((response) => response.data)
