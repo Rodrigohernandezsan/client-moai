@@ -22,7 +22,7 @@ export default class UpdateCourse extends Component {
   }
 
   getCourseData = () => {
-    axios.get(`http://localhost:5000/api/courses ${this.props.match.params.id}`)
+    axios.get(`http://localhost:5000/api/courses/${this.props.match.params.id}`)
       .then(res => {
         if (res.data.user._id === localStorage.getItem("id")) {
           this.setState({

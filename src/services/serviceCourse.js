@@ -2,7 +2,7 @@ import axios from "axios";
 
 const service = axios.create({
 
-  baseURL: process.env.REACT_APP_API_BASE_URL ||  "http://localhost:5000/api/courses",
+  baseURL: process.env.REACT_APP_API_BASE_URL ||  "http://localhost:5000/api",
 });
 
 export const getCourseData = (id) => {
@@ -29,7 +29,6 @@ export const createCourse = (id) => {
     .then((response) => response.data)
     .catch((err) => err);
   }
-
 
 
 export const updateCourse = (id, course) => {

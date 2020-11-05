@@ -112,13 +112,13 @@ body {
 
 
 .header {
-  background: #4e8ace;
+  background: rgb(255, 242, 198);
   padding: 40px 0;
   margin-bottom: 30px;
 }
 h1.header--logo {
-  color: #fff;
-  font-size: 114px;
+  color: rgb(0, 0, 0);
+  font-size: 134px;
   padding: 0 15px;
   margin: 0;
   display: inline-block;
@@ -131,14 +131,14 @@ h1.header--logo {
 
 }
 .header--logo a:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
   
 }
 .header--logo .selected {
-  color: #fff;
+  color: rgb(8, 8, 8);
 }
 .header--logo .chevron {
-  fill: rgb(255, 255, 255);
+  fill: rgb(0, 0, 0);
   width: 7px;
   height: auto;
 }
@@ -149,13 +149,17 @@ h1.header--logo {
 }
 /* line 37, ../sass/global.sass */
 .header nav a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-left: 20px;
   font-size: 29px;
+  font-weight: bold;
+
 }
 /* line 40, ../sass/global.sass */
 .header nav a:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
 }
 
 /* line 44, ../sass/global.sass */
@@ -335,7 +339,8 @@ p {
 /* line 164, ../sass/global.sass */
 .course--header .course--label {
   font-size: 18px;
-  color: #999;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 /* line 167, ../sass/global.sass */
 .course--header .course--title {
@@ -651,7 +656,7 @@ input:focus {
 
 /* styles the signed in user's name in the header */
 .header nav span {
-  color: #fff;
+  color: rgb(2, 2, 2);
   margin-left: 20px;
 }
 
@@ -670,17 +675,22 @@ input:focus {
   margin-bottom: 20px;
 }
 
+
+a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
 .footer {
 
   
   line-height: 60px;
-  background-color:#4e8ace;
+  background-color:rgb(255, 242, 198);
   font-family: Roboto Mono,monospace;
-  font-weight: bold;
+  
   position:fixed;
   
   bottom:0px;
-  height:120px;
+  height:160px;
   width:100%;
   
  
@@ -690,23 +700,24 @@ input:focus {
   display: inline-block;
   display: flex;
   grid-gap: 40px;
-  justify-items: center;
   margin: auto; 
+  
+  
 }
 
 
 .footer a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  box-shadow: inset 0 -1px 0 #39b979;
+  font-weight: bold;
+  
 }
 
-a:hover {
-  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
-}
 
-.footer a:hover {
-  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+.footer,
+  a:hover {
+  box-shadow: inset 0 -1.2em 0 #77cea2;
 }
 
 .footer li:last-child {
@@ -721,7 +732,6 @@ a:hover {
 
 footer > div {
   display: flex;
-  
   line-height: 6.7;
   font-family: Roboto Mono,monospace;
 }
