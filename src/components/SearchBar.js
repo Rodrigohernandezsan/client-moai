@@ -20,7 +20,7 @@ class Search extends React.Component {
             <input
               type='text'
               name='srchwrd'
-              placeholder='Search...'
+              placeholder='Search'
               value={this.state.srchwrd}
               onChange={this.handleSearch}
             />

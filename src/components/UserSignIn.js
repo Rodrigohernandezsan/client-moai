@@ -41,7 +41,8 @@ export default class UserSignIn extends Component {
           {context =>
             <div className="bounds">
               <div className="grid-33 centered signin">
-                <h1>Sign In</h1>
+                <h1>👋 Sign In</h1>
+                
                 <div>
                   <form onSubmit={(e) => {
                     e.preventDefault();

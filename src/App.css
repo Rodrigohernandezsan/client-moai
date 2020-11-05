@@ -106,13 +106,13 @@ svg {
 
 body {
   font-family: Roboto Mono,monospace;
-  background: rgb(255, 242, 198);
+  background: rgb(255, 229, 146);
 
 }
 
 
 .header {
-  background: rgb(255, 242, 198);
+  background: rgb(255, 229, 146);
   padding: 40px 0;
   margin-bottom: 30px;
 }
@@ -187,6 +187,9 @@ h1.header--logo {
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
+  padding-right: 39px;
+  
 }
 
 /* line 61, ../sass/global.sass */
@@ -310,7 +313,7 @@ p {
 }
 /* line 141, ../sass/global.sass */
 .course--add--title {
-  color: rgb(59, 58, 58);
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-size: 28px;
   position: absolute;
@@ -340,13 +343,12 @@ p {
 .course--header .course--label {
   font-size: 18px;
   color: rgb(0, 0, 0);
-  font-weight: bold;
 }
 /* line 167, ../sass/global.sass */
 .course--header .course--title {
   font-size: 48px;
   margin-bottom: 15px;
-  color: #332a40;
+  color: #000000;
 }
 /* line 171, ../sass/global.sass */
 .course--header p {
@@ -373,7 +375,7 @@ p {
 .course--description p {
   font-size: 26px;
   line-height: 1.8;
-  color: rgb(19, 1, 1);
+  color: rgb(0, 0, 0);
 }
 /* line 195, ../sass/global.sass */
 .course--description ol,
@@ -385,7 +387,7 @@ p {
   position: relative;
   padding-left: 30px;
   padding: 30px 0 30px 5%;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(0, 0, 0);
   font-size: 16px;
   line-height: 1.8;
   font-family: Roboto Mono,monospace;
@@ -406,7 +408,7 @@ p {
 /* line 210, ../sass/global.sass */
 .course--description ol li:before {
   content: counter(step-counter);
-  color: #999;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   position: absolute;
   left: 0;
@@ -419,7 +421,7 @@ p {
   margin: 9px 0 0 -30px;
   width: 5px;
   height: 5px;
-  border: 1px solid #999;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   display: block;
 }
@@ -428,7 +430,7 @@ p {
 .course--description h2,
 .course--description h3 {
   font-family: Roboto Mono,monospace;
-  color: #222;
+  color: rgb(0, 0, 0);
   margin-bottom: 30px;
 }
 /* line 235, ../sass/global.sass */
@@ -448,18 +450,18 @@ p {
   font-size: 18px;
   font-weight: 100;
   margin: 0 0 10px;
-  color: #999;
+  color: rgb(0, 0, 0);
   display: block;
 }
 /* line 287, ../sass/global.sass */
 .course--stats--list h4 {
   font-family: Roboto Mono,monospace;
   font-weight: 100;
-  color: #999;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   padding: 0 0 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #26312b;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-overflow: ellipsis;
@@ -497,15 +499,11 @@ p {
   margin-top: 60px;
   font-size: 26px;
   
+  
 }
 
 
-.Search {
-  font-size: 17px; 
-  font-family: Roboto Mono,monospace;
-  width: 299px;
-  padding-left: 19px;  display: inline-block;
- }
+
 
  
 
@@ -546,13 +544,13 @@ textarea:-ms-input-placeholder {
 }
 /* line 485, ../sass/global.sass */
 textarea:focus {
-  border-color: #772be9;
+  border-color: #030303;
 }
 
 /* line 488, ../sass/global.sass */
 input {
   width: 100%;
-  color: #332a40;
+  color: #000000;
   border-radius: 8px;
   border: 1px solid #ccc4d8;
   padding: 15px;
@@ -560,6 +558,7 @@ input {
   outline: none;
   box-sizing: border-box;
   font-size: 16px;
+  padding-bottom: 20px;
 }
 /* line 29, ../sass/mixins.sass */
 input::-webkit-input-placeholder {
@@ -640,8 +639,8 @@ input:focus {
 }
 /* line 530, ../sass/global.sass */
 .button-secondary:hover {
-  color: #2b8eff;
-  box-shadow: 0 0 0 2px #2b8eff inset;
+  color: #000000;
+  box-shadow: 0 0 0 2px #000000 inset;
 }
 
 /* adds additional padding to the bottom of an element */
@@ -684,7 +683,7 @@ a:hover {
 
   
   line-height: 60px;
-  background-color:rgb(255, 242, 198);
+  background-color:rgb(255, 229, 146);
   font-family: Roboto Mono,monospace;
   
   position:fixed;
@@ -720,14 +719,7 @@ a:hover {
   box-shadow: inset 0 -1.2em 0 #77cea2;
 }
 
-.footer li:last-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
 
-.footer li:hover ~ li p {
-  animation: wave-animation 0.3s infinite;
-}
 
 
 footer > div {

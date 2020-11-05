@@ -86,7 +86,7 @@ export default class UserSignUp extends Component {
           {context =>
             <div className="bounds">
               <div className="grid-33 centered signin">
-                <h1>Sign Up</h1>
+                <h1> 👋 Sign Up</h1>
                 {
                   (!this.state.validationErrors) 
                     ? null
