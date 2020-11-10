@@ -24,7 +24,7 @@ export default class CourseDetails extends Component {
 
   
   getCourseData = () => {
-    axios.get(`http://localhost:5000/api/courses/${this.props.match.params.id}`)
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}${this.props.match.params.id}`)
       .then(res => {
         this.setState({
           course: res.data,
@@ -49,7 +49,7 @@ export default class CourseDetails extends Component {
   }
 
   deleteCourse = (auth) => {
-    axios.delete(`http://localhost:5000/api/courses/${this.props.match.params.id}`, { headers: { 'Authorization': auth } })
+    axios.delete(`${process.env.REACT_APP_API_BASE_URL}${this.props.match.params.id}`, { headers: { 'Authorization': auth } })
       .then(() => this.setState({
         deleted: true
       }))
