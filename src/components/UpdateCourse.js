@@ -57,7 +57,7 @@ export default class UpdateCourse extends Component {
       "materialsNeeded": this.state.materials,
       "estimatedTime": this.state.time
     }
-    axios.put(`${process.env.REACT_APP_API_BASE_URL}/${this.props.match.params.id}`, formData, { headers: { "Authorization": auth } })
+    axios.put(`${process.env.REACT_APP_API_BASE_URL}${this.props.match.params.id}`, formData, { headers: { "Authorization": auth } })
       .then(res => console.log(res))
       .catch(err => {
         if (err.response.status === 400) {
