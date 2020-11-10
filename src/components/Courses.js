@@ -42,23 +42,16 @@ export default class Courses extends Component {
 
   handleSearch = (value) => {
 
-    // console.log("test")
     this.setState({
       searchParam: value
     })
-    // const srchResults = this.state.allCourses.map((course) => course.title.toLowerCase().includes(value.toLowerCase()))
-    // const newArray = this.state.allCourses.filter(course => course.title.toLowerCase().includes(value.toLowerCase()))
-    // this.setState({
-    //   srchResults,
-    //   allCourses: newArray
-    // });
+ 
   };
 
   
 
   render() {
     
-    // const { srchResults, allCourses } = this.state;
     const courseData = this.state.allCourses.filter(course => course.title.toLowerCase().includes(this.state.searchParam.toLowerCase()) ).map(course => {
       return (<div className="grid-33" key={course._id}>
         <Link className="course--module course--link" to={`/courses/${course._id}`}>
