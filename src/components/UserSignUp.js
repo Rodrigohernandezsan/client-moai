@@ -37,7 +37,7 @@ export default class UserSignUp extends Component {
         'emailAddress': this.state.emailAddress,
         'password': this.state.password,
       }
-      axios.post('http://localhost:5000/api/users', formData)
+      axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/users`, formData)
         .then(() => {
           
           callback(this.state.emailAddress, this.state.password, this.props.history);

@@ -16,7 +16,7 @@ export class Provider extends Component {
   signIn = (email, password, history) => {
     const credentials = `${email}:${password}`;
     const auth = 'Basic ' + new Buffer(credentials).toString('base64');
-    axios.get('http://localhost:5000/api/users', { headers: { 'Authorization': auth } })
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/users`, { headers: { 'Authorization': auth } })
       .then(res => {
         this.setState({
           firstName: res.data.firstName,
