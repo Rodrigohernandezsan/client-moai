@@ -55,7 +55,7 @@ export default class Courses extends Component {
     
     
     //const { srchResults, allCourses } = this.state;4
-    console.log("test"); 
+    
     const courseData = this.state.allCourses.filter(course => course.title.toLowerCase().includes(this.state.searchParam.toLowerCase()) ).map(course => {
       console.log("test"); 
       
