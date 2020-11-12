@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { Consumer } from './contex';
@@ -36,6 +35,7 @@ export default class CourseDetails extends Component {
 
       })
       .catch(err => {
+        console.log("dasd",err)
         if (err.response.status === 404) {
           this.setState({
             notFound: true
@@ -49,7 +49,7 @@ export default class CourseDetails extends Component {
   }
 
   deleteCourse = (auth) => {
-    axios.delete(`${process.env.REACT_APP_API_BASE_URL}${this.props.match.params.id}`, { headers: { 'Authorization': auth } })
+    axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${this.props.match.params.id}`, { headers: { 'Authorization': auth } })
       .then(() => this.setState({
         deleted: true
       }))
