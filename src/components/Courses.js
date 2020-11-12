@@ -21,7 +21,7 @@ export default class Courses extends Component {
   getCourseData = () => {
     axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/courses`)
       .then(res => {
-        console.log("¨RRRRRREEEEEEEEEEEEEEES", res)
+        console.log("¨RRRRRREEEEEEEEEEEEEEES",res)
         this.setState({
           
           allCourses: res.data,
