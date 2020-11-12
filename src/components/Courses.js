@@ -57,6 +57,8 @@ export default class Courses extends Component {
     //const { srchResults, allCourses } = this.state;4
     console.log("test"); 
     const courseData = this.state.allCourses.filter(course => course.title.toLowerCase().includes(this.state.searchParam.toLowerCase()) ).map(course => {
+      console.log("test"); 
+      
       return (<div className="grid-33" key={course._id}>
         <Link className="course--module course--link" to={`/courses/${course._id}`}>
           <h4 className="course--label">Resources</h4>
