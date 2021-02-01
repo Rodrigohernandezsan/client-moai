@@ -1,4 +1,4 @@
-# M3 - 🗿 Moai
+# M3 -  Moai
 
 ## Description
 

@@ -14,7 +14,7 @@ const Header = () => {
             <div className="header">
               <div className="bounds">
             
-                <h1 className="header--logo"> 🗿 Moai </h1>
+                <h1 className="header--logo"> Moai</h1>
                 {/* <div className="Search">
                 <input type="Search" type="text" placeholder="Search.." to="/search"></input>  
                 </div> */}
@@ -28,7 +28,7 @@ const Header = () => {
 
             <div className="header">
             <div className="bounds">
-            <h1 className="header--logo">  🗿 Moai </h1>
+            <h1 className="header--logo">  Moai</h1>
 
 
 
