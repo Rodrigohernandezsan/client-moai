@@ -100,7 +100,7 @@ export default class CreateCourse extends Component {
                       </div>
                       <div className="course--description">
                         <div>
-                          <textarea id="description" name="description" className="" placeholder="📘 Resources description..."
+                          <textarea id="description" name="description" className="" placeholder="Description + link..."
                             value={this.state.description} onChange={(e) => this.handleChange(e, 'description')} />
                         </div>
                       </div>
@@ -109,16 +109,16 @@ export default class CreateCourse extends Component {
                       <div className="course--stats">
                         <ul className="course--stats--list">
                           <li className="course--stats--list--item">
-                            <h4>📅 MODULE</h4>
+                            <h4>📍 CATEGORY</h4>
                             <div>
                               <input id="estimatedTime" name="estimatedTime" type="text" className="course--time--input"
-                                placeholder="1,2,3" value={this.state.time} onChange={(e) => this.handleChange(e, 'time')} />
+                                placeholder="UX/UI,Java,php..." value={this.state.time} onChange={(e) => this.handleChange(e, 'time')} />
                             </div>
                           </li>
                           <li className="course--stats--list--item">
-                            <h4>📌FEATURES</h4>
+                            <h4>📌LEVEL</h4>
                             <div>
-                              <textarea id="materialsNeeded" name="materialsNeeded" className="" placeholder="Bullet points..."
+                              <textarea id="materialsNeeded" name="materialsNeeded" className="" placeholder="Beginner, Intermediate, Advanced, Mixed..."
                                 value={this.state.materials} onChange={(e) => this.handleChange(e, 'materials')} />
                             </div>
                           </li>

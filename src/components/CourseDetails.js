@@ -81,7 +81,7 @@ export default class CourseDetails extends Component {
                 { 
                   (this.state.time)
                     ? <li className="course--stats--list--item">
-                      <h4>📅 MODULE</h4>
+                      <h4>📅 CATEGORY</h4>
                       <h3>{this.state.time}</h3>
                     </li>
                     : null
@@ -89,7 +89,7 @@ export default class CourseDetails extends Component {
                 { 
                   (this.state.materials)
                     ? <li className="course--stats--list--item">
-                      <h4>📌 FEATURES</h4>
+                      <h4>📌 LEVEL</h4>
                       <ul>
                         <ReactMarkdown source={this.state.materials} />
                       </ul>
