@@ -106,13 +106,13 @@ svg {
 
 body {
   font-family: Roboto Mono,monospace;
-  background: hsl(0, 0%, 100%);
+  background: hsl(48, 100%, 87%);
 
 }
 
 
 .header {
-  background: hsl(0, 0%, 100%);
+  background: hsl(48, 100%, 87%);
   /* padding: 40px 0; */
   margin-bottom: 30px;
 }
@@ -163,11 +163,11 @@ h1.header--logo {
 }
 
 /* line 44, ../sass/global.sass */
-.actions--bar {
-  background:hsl(162, 49%, 83%);
+ /* .actions--bar {
+  background:hsl(234, 20%, 30%);
   padding: 20px 0;
   margin-top: -30px;
-}
+}  */
 /* line 2, ../sass/mixins.sass */
 .actions--bar:before, .actions--bar:after {
   content: " ";
@@ -193,7 +193,7 @@ h1 {
 
 /* line 61, ../sass/global.sass */
 a {
-  color:hsl(219, 89%, 52%);
+  color:hsl(234, 20%, 30%);
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: color 0.2s;
@@ -252,7 +252,7 @@ p {
 
 /* line 102, ../sass/global.sass */
 .course--module {
-  background: hsl(161, 50%, 83%);
+  background: hsl(234, 20%, 30%);
   border-radius: 8px;
   padding: 30px;
   margin-bottom: 30px;
@@ -281,14 +281,14 @@ p {
   font-family: Roboto Mono,monospace;
   font-size: 14px;
   font-weight: 100;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 10px;
   font-weight: normal;
 }
 /* line 123, ../sass/global.sass */
 .course--title {
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 /* line 126, ../sass/global.sass */
 .course--link {
@@ -299,12 +299,12 @@ p {
 }
 /* line 133, ../sass/global.sass */
 .course--add--module {
-  background: hsl(220, 86%, 52%);
+  background: hsl(188, 100%, 88%);
   text-align: center;
 }
 /* line 137, ../sass/global.sass */
 .course--add--module:hover .course--add--title {
-  color:hsl(0, 0%, 100%);
+  color:hsl(0, 0%, 0%);
 }
 /* line 139, ../sass/global.sass */
 .course--add--module:hover .add {
@@ -312,7 +312,7 @@ p {
 }
 /* line 141, ../sass/global.sass */
 .course--add--title {
-  color: rgb(255, 255, 255);
+  color: hsl(0, 0%, 0%);
   display: inline-block;
   font-size: 28px;
   position: absolute;
@@ -592,8 +592,8 @@ input:focus {
 
 /* line 507, ../sass/global.sass */
 .button {
-  background: hsl(219, 89%, 52%);
-  color: rgb(255, 255, 255);
+  background: hsl(234, 20%, 30%);
+color: white;
   font-family: Roboto Mono,monospace;
   font-size: 18px;
   padding: 15px 30px;
@@ -615,14 +615,14 @@ input:focus {
 }
 /* line 522, ../sass/global.sass */
 .button:not(.button-secondary):hover {
-  background:  hsl(219, 89%, 52%);
+  background:  hsl(234, 20%, 30%);
 }
 
 /* line 525, ../sass/global.sass */
 .button-secondary {
-  color: hsl(219, 89%, 52%);
+  color: hsl(234, 20%, 30%);
   background: none;
-  box-shadow: 0 0 0 2px hsl(219, 89%, 52%);
+  box-shadow: 0 0 0 2px hsl(234, 20%, 30%);
   -webkit-transition: box-shadow 0.2s, color 0.2s;
   -moz-transition: box-shadow 0.2s, color 0.2s;
   -ms-transition: box-shadow 0.2s, color 0.2s;
@@ -631,8 +631,8 @@ input:focus {
 }
 /* line 530, ../sass/global.sass */
 .button-secondary:hover {
-  color: #000000;
-  box-shadow: 0 0 0 2px #000000 inset;
+  color: hsl(234, 20%, 30%);
+  box-shadow: 0 0 0 2px hsl(234, 20%, 30%);
 }
 
 /* adds additional padding to the bottom of an element */
@@ -699,8 +699,9 @@ a:hover {
 .footer a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  box-shadow: inset 0 -1px 0 hsl(219, 89%, 52%);
+  box-shadow: inset 0 -1px 0 hsl(234, 20%, 30%);
   font-weight: bold;
+  
   
 }
 
